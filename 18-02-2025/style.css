@@ -1,0 +1,42 @@
+*{
+    padding:0px;
+    margin :0px;
+    box-sizing:border-box;
+}
+.container{
+    display:flex;                /*defines a flex container*/
+    flex: 2 1 200px;           /*shorthend for flex grow shrink basis */
+    gap:70px;
+    flex-direction:row;
+    flex-wrap:no-wrap;
+    justify-content:center;
+    align-items :center;
+    justify-content :space-around;
+   
+    margin:10px;
+    background-color: rgb(223, 223, 63);
+    padding:20px;
+}
+.container-2{
+    display:flex;
+    flex: 2 1 300px;
+    flex-direction:column;
+    gap:20px; 
+    color:black;
+    align-items :end;
+    justify-content:start;
+    background-color: rgb(222, 144, 93);
+    padding:20px;
+}
+.container .item-1,.container .item-3,.container .item-5{
+    background-color: aqua;
+    padding:20px;
+}
+.container .item-2,.container .item-4{
+background-color: lightcoral;
+padding:20px;
+}
+.container-2 .item-1,.container-2 .item-2,.container-2 .item-3{
+    background-color: rgb(46, 199, 22);
+    padding:20px;
+}
