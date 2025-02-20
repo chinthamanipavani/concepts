@@ -1,0 +1,90 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    display:grid;
+    place-items:center;
+    justify-content:center;
+
+}
+.container{
+height:100%;
+width:100%;
+border:2px solid red;
+background-color: aqua;
+display:grid;
+justify-content:center;
+grid-template-areas: 
+'a b c'
+'d e f'
+'g h i'
+}
+.container .box-1{
+   grid-area: a;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-2{
+    grid-area: b;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-3{
+    grid-area: c;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-4{
+    justify-items:center;
+    grid-area: d;
+    padding:10px;
+}
+.container .box-5{
+    grid-area: e;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-6{
+    grid-area: f;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-7{
+    grid-area: g;
+    justify-items:center;
+    padding:10px;
+}
+.container .box-8{
+    justify-items:center;
+    grid-area: h;
+    padding:10px;
+}
+@media (max-width:500px){
+    .container{
+        height:100%;
+        width:100%;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+    }
+}
+
+@media (min-width:501px) and (max-width:900px){
+    .container{
+        height:100%;
+        width:100%;
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f'
+        'g h'
+    }
+}
